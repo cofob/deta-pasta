@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Create{% endblock %}
+
+{% block body %}
+    <h1>Pastebin</h1>
+
+    <form method="post" action="/create">
+        <textarea name="text" cols="80" rows="20"></textarea>
+
+        <br><button type="submit">Send!</button>
+    </form>
+
+    <h2>One-click own pasta:</h2>
+
+    <a href="https://go.deta.dev/deploy?repo=https://github.com/cofob/deta-pasta">
+        <img src="https://button.deta.dev/1/svg" alt="Deploy">
+    </a>
+{% endblock %}
